@@ -7,7 +7,7 @@ It provides a **structured, print-ready** solution for creating **immersive and 
 
 ## ✨ Features
 
-- 📜 **Markdown-based content** – Convert the rulebook in Markdown for easy rewieving and automatic translation.
+- 📜 **Markdown-based content** – Convert the [Trench Crusade]([url](https://www.trenchcrusade.com/)) rulebook in Markdown for easy reviewing and automatic translation.
 - 📄 **Automated page formatting** – Uses **PrinceXML** to generate print-ready layouts.
 - 🖋️ **Beautiful typography** – Optimized for readability and an immersive experience.
 - 🏛 **Dynamic margin system** – Different margins for left/right pages for better print alignment.
