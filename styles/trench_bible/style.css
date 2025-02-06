@@ -1,0 +1,190 @@
+@page {
+  size: 11cm 17cm;
+  margin: 1cm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "1776_Independance";
+    font-size: 1em;
+  }
+}
+
+@font-face {
+  font-family: "1776_Independance";
+  font-weight: bold;
+  src: url('./fonts/6c596818cc9df5e502db2efe00389c90.woff');
+}
+
+@font-face {
+  font-family: "1776_Independance";
+  src: url('./fonts/8329fe6f020f516acd3d04d7fd252505.woff');
+}
+
+@font-face {
+  font-family: "Silvus";
+  src: url('./fonts/silvus__.ttf');
+}
+
+body {
+  font-family: "1776_Independance";
+  font-weight: normal;
+  line-height: 1;
+  text-align: justify;
+  text-justify: inter-character;
+  word-break: normal;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0.5cm;
+  columns: 1;
+}
+
+h2 {
+  font-size: 5em;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+  page-break-before: always;
+  page-break-after: always;
+  columns: 1;
+}
+
+h2 .smallWordsTitle {
+  font-size: .5em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  break-before: column;
+  text-transform: uppercase;
+}
+
+
+/* h3::before {
+  content: "<img class='filler' src='illlustrations/fillers/filler1.jpg' /> ";
+} */
+
+h4 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+h6 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.filler {
+  width: 100%;
+  display: block;
+  margin: 0 auto
+}
+
+.header {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  page-break-before: always;
+}
+
+.model {
+  page-break-before: always;
+}
+
+.warbandvariant {
+  page-break-before: always;
+}
+
+.warbandvariant::after,
+.warbandvariant::before {
+  content: "***";
+}
+
+.centeredPageContainer {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align vertical */
+  page-break-before: always;
+  page-break-after: always;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.modelIllustration {
+  width: 100%;
+}
+
+.cover {
+  text-align: center;
+  margin-top: 5cm;
+}
+
+.content {
+  margin-top: 2cm;
+}
+
+.emphaze {
+  text-decoration-color: brown;
+}
+
+.lettrine {
+  margin-block-end: 5px;
+}
+
+.lettrine::first-letter {
+  font-size: 6em;
+  font-family: "Silvus";
+  float: left;
+  margin-right: 10px;
+  margin-top: 15px;
+  line-height: 1;
+  vertical-align: top;
+}
+
+ol {
+  column-gap: 20px;
+  columns: 2;
+  padding: 0;
+  padding-left: 10px;
+  margin-left: 0;
+  list-style-position: inside;
+  font-size: 14px;
+}
+
+ol li {
+  padding-left: 0px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  page-break-inside: avoid;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  margin-right: 10px;
+}

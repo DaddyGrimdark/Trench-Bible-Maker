@@ -1,0 +1,214 @@
+@page {
+  size: 16cm 24cm;
+  margin-top: 25mm;
+  margin-bottom: 35mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "MainFont";
+    font-size: 1em;
+  }
+}
+
+@page :right {
+  background-image: url(medieval_frame/background_right.png);
+  background-position: center top;
+  background-size: 100% auto;
+  margin-right: 40mm;
+  margin-left: 20mm;
+}
+
+@page :left {
+  background-image: url(medieval_frame/background_left.png);
+  background-position: center top;
+  background-size: 100% auto;
+  margin-left: 35mm;
+  margin-right: 20mm;
+}
+
+@font-face {
+  font-family: "MainFont";
+  font-weight: bold;
+  src: url('./fonts/Ghregor/FontFiles/OTF/GhregorAged.otf');
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url('./fonts/Ghregor/FontFiles/OTF/GhregorAged.otf');
+}
+
+@font-face {
+  font-family: "Dropcaps";
+  src: url('./fonts/Ghregor/FontFiles/OTF/GhregorDropcaps.otf');
+}
+
+body {
+  font-family: "MainFont";
+  color: #2b2729;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  word-break: normal;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0.5cm;
+  columns: 1;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+  page-break-before: always;
+  page-break-after: always;
+  columns: 1;
+  color: #7d4f2f;
+}
+
+h2 .smallWordsTitle {
+  font-size: .5em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  break-before: column;
+  text-transform: uppercase;
+  page-break-before: always;
+  color: #7d4f2f;
+}
+
+
+/* h3::before {
+  content: "<img class='filler' src='illlustrations/fillers/filler1.jpg' /> ";
+} */
+
+h4 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7d4f2f;
+}
+
+h5 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+  color: #7d4f2f;
+}
+
+h6 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+  color: #7d4f2f;
+}
+
+.filler {
+  width: 80%;
+  display: block;
+  margin: 0 auto
+}
+
+.model {
+  page-break-before: always;
+}
+
+.warbandvariant {
+  page-break-before: always;
+}
+
+.warbandvariant::after,
+.warbandvariant::before {
+  content: "***";
+}
+
+.centeredPageContainer {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align vertical */
+  page-break-before: always;
+  page-break-after: always;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.modelIllustration {
+  width: 100%;
+}
+
+.cover {
+  text-align: center;
+  margin-top: 5cm;
+}
+
+.content {
+  margin-top: 2cm;
+}
+
+.emphaze {
+  color: #7d4f2f;
+}
+
+.lettrine {
+  margin-block-end: 5px;
+}
+
+.lettrine::first-letter {
+  font-size: 12em;
+  font-family: "Dropcaps";
+  float: left;
+  margin-right: 10px;
+  margin-top: 15px;
+  line-height: 1;
+  vertical-align: top;
+  color: #7d4f2f;
+}
+
+ol {
+  column-gap: 20px;
+  columns: 1;
+  padding: 0;
+  padding-left: 10px;
+  margin-left: 0;
+  list-style-position: inside;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+ol li {
+  padding-left: 0px;
+
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  page-break-inside: avoid;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+p {
+  color: #7d4f2f;
+}

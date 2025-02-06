@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Ghregor';
+    src: url('GhregorRegular.woff2') format('woff2'),
+        url('GhregorRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ghregor Dropcaps';
+    src: url('GhregorDropcapsRegular.woff2') format('woff2'),
+        url('GhregorDropcapsRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ghregor Aged';
+    src: url('GhregorAgedRegular.woff2') format('woff2'),
+        url('GhregorAgedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
